@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="KBC.exe" version="1.0.0.3" publicKeyToken="18ecf8aaca589f05" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="Kaun_Banega_Crorepati.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="KBC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="KBC.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu_UI_v1.52.dll" size="224256">
+      <assemblyIdentity name="Bunifu_UI_v1.52" version="1.3.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3g5TDUbIA9hbiuttGIFvGwnLPa/vteGf36Fcn0Hg9HQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Guna.UI.dll" size="1136808">
+      <assemblyIdentity name="Guna.UI" version="1.9.0.1" publicKeyToken="AD275B4BE6718D4B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>V20t4snvW8Hqm91zro9AgAQmADfDtyIn7tJ+mVFmJ20=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="KBC.exe" size="3529256">
+      <assemblyIdentity name="KBC" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>eZbLUn3zfefsfpbhMLQxJeFvw9IairdsBZjmJ9/We3s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Kaun_Banega_Crorepati.ico" size="270398">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>StxcaVAUdqnhw92BZXf2/fPgV5O0JhQ7891B1uCjUdU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="KBC.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-7D27K27\Abhay Kumar Gupta" issuerKeyHash="e2d8aab36f2fbc1cdd20cbee014d310465224d74" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>VxFGBw/uguctq9stSJI0U6kiNT9HuM+3RQengMt+o1U=</DigestValue></Reference></SignedInfo><SignatureValue>QesqSC3pQbch4oRnj2c1VE/fy6XBXIWxzMQqx4OQ+3Mmvl3ilmlVNXzQEJYwjnm6AzECgSBIbTyMWDYYyxm6iy3OKlbLNl8FJPrlblvsU+osJO1RQCKRFGMjOoHn4S92tRGk+e4hJN0uaAptjsorkFfq0Lv6txDGzel2U/Mmv2U=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>n8prKqhkzhaqEQ0xpijQGpC6go/rJo+iCtCX0coZxVQI3KpPPTrJGRIX6GwNA26zBIHSv6jlx1NkERueI2eoBIwnPcXbrZmLfCEEDqGytzks1s/wpr6K7B3sCdTbRzRMa8EAbHSm1tAymJbcRPUGqY0g2/tURu1oFyL/geeK/qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="55a37ecb80a70745b7cfb8473f3522a9533492482ddbab2de782ee0f07461157" Description="" Url=""><as:assemblyIdentity name="KBC.exe" version="1.0.0.3" publicKeyToken="18ecf8aaca589f05" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-7D27K27\Abhay Kumar Gupta</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BW9opafmRzbgLKNMllIQygvHFqDpqECG4KKa69lnQ5Y=</DigestValue></Reference></SignedInfo><SignatureValue>bieVzPYmg+wjCQ01LbqitgtmPISf41XMgO5fuB+1h/TcD5+RvkHMjOYjJIfc8KEYg8yd6cPClNGxRGhttY72HkmlzylDVn+E6Z71KtmgyEz6FTJzPhJrwNqDEV+AzLNZHcjbuaKOYolyWuPGIRnwe1L1dYxpg1peVan1fOgGAEw=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>n8prKqhkzhaqEQ0xpijQGpC6go/rJo+iCtCX0coZxVQI3KpPPTrJGRIX6GwNA26zBIHSv6jlx1NkERueI2eoBIwnPcXbrZmLfCEEDqGytzks1s/wpr6K7B3sCdTbRzRMa8EAbHSm1tAymJbcRPUGqY0g2/tURu1oFyL/geeK/qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICHTCCAYagAwIBAgIQWFlvIQ2IUZtB+I4qbTSggzANBgkqhkiG9w0BAQsFADBNMUswSQYDVQQDHkIARABFAFMASwBUAE8AUAAtADcARAAyADcASwAyADcAXABBAGIAaABhAHkAIABLAHUAbQBhAHIAIABHAHUAcAB0AGEwHhcNMjExMTE1MDgwMjI3WhcNMjIxMTE1MTQwMjI3WjBNMUswSQYDVQQDHkIARABFAFMASwBUAE8AUAAtADcARAAyADcASwAyADcAXABBAGIAaABhAHkAIABLAHUAbQBhAHIAIABHAHUAcAB0AGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAJ/KayqoZM4WqhENMaYo0BqQuoKP6yaPogrQl9HKGcVUCNyqTz06yRkSF+hsDQNuswSB0r+o5cdTZBEbniNnqASMJz3F262Zi3whBA6hsrc5LNbP8Ka+iuwd7AnU20c0TGvBAGx0ptbQMpiW3ET1BqmNINv7VEbtaBci/4Hniv6pAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAnrtOVV6u8HFJPCnubqARrphyPNecl1UDV/XWJC8BjncsvXQzLO9XRr3f/ZWHE5CZZbGFADrsgpR+nQ/stKfRkfLivp093QcuAMhX3VOPbvRhRs879k5+0R4+wiaUbyJSgUKJP9Tdvn4MFA9em1cITwOvzsbjQonizQq3bzQseBk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
